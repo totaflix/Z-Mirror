@@ -139,7 +139,7 @@ JAVA = ("uJjxvDIuQLVbyMZ61fyl7")
 
 BOT_TOKEN = environ.get(
     "BOT_TOKEN",
-    ""
+    "8018020720:AAHJXASZiT8vRuHS-jhEJfVxZV2dhvQ4uEs"
 )
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
@@ -152,10 +152,10 @@ BOT_ID = BOT_TOKEN.split(
 
 DATABASE_URL = environ.get(
     "DATABASE_URL",
-    ""
+    "mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
 if len(DATABASE_URL) == 0:
-    DATABASE_URL = ""
+    DATABASE_URL = "mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 if DATABASE_URL:
     try:
@@ -217,7 +217,7 @@ if DATABASE_URL:
         conn.close()
         BOT_TOKEN = environ.get(
             "BOT_TOKEN",
-            ""
+            "8018020720:AAHJXASZiT8vRuHS-jhEJfVxZV2dhvQ4uEs"
         )
         BOT_ID = BOT_TOKEN.split(
             ":",
@@ -225,7 +225,7 @@ if DATABASE_URL:
         )[0]
         DATABASE_URL = environ.get(
             "DATABASE_URL",
-            ""
+            "mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         )
     except Exception as e:
         LOGGER.error(f"Database ERROR: {e}")
