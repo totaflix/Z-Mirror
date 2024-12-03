@@ -259,7 +259,7 @@ run(
 
 OWNER_ID = environ.get(
     "OWNER_ID",
-    ""
+    "5659668981"
 )
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
@@ -269,7 +269,7 @@ else:
 
 TELEGRAM_API = environ.get(
     "TELEGRAM_API",
-    ""
+    "22920744"
 )
 if len(TELEGRAM_API) == 0:
     log_error("TELEGRAM_API variable is missing! Exiting now")
@@ -279,7 +279,7 @@ else:
 
 TELEGRAM_HASH = environ.get(
     "TELEGRAM_HASH",
-    ""
+    "31cb93c017f265e4fa6d0ba91236b826"
 )
 if len(TELEGRAM_HASH) == 0:
     log_error("TELEGRAM_HASH variable is missing! Exiting now")
